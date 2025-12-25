@@ -12,6 +12,14 @@ This project provides a complete pipeline to correct color casts, remove haze, a
 
 ---
 
+## 📸 Results
+
+| **Original Input** | **Enhanced Output** |
+| :---: | :---: |
+| ![Original Image](figs/8_img_.png) | ![Enhanced Result](figs/enhanced_result.jpg) |
+
+---
+
 ## 🖼️ Dataset
 
 This project uses the **UIEB (Underwater Image Enhancement Benchmark)** dataset for testing and validation. The raw dataset preserves the original underwater lighting conditions, making it ideal for evaluating restoration algorithms.
@@ -31,19 +39,12 @@ This project uses the **UIEB (Underwater Image Enhancement Benchmark)** dataset 
 
 The enhancement pipeline consists of 6 modular stages designed to tackle specific underwater degradation issues:
 
-
 1.  **White Balance Correction (LAB)**: Corrects color casts by adjusting A (Green-Red) and B (Blue-Yellow) channels in LAB space.
-    
 2.  **Red Channel Restoration**: Compensates for the severe absorption of red light using histogram equalization.
-    
 3.  **CLAHE**: Contrast-Limited Adaptive Histogram Equalization for improving local contrast without amplifying noise.
-    
 4.  **Dark Channel Dehazing**: Removes underwater haze/fog using the Dark Channel Prior (DCP) algorithm.
-    
 5.  **Adaptive Sharpening**: Unsharp masking to enhance edge details.
-
 6.  **Gamma Correction**: Brightens shadow regions to reveal hidden details.
-    
 
 ---
 
@@ -67,7 +68,7 @@ python underwater_enhance.py
 
 **User Guide:**
 
-1. Click **"Load Image"** to select a file (supports Chinese paths).
+1. Click **"Load Image"** to select a file.
 2. Adjust sliders (Omega, CLAHE, Shifts) to see real-time changes.
 3. Click **"Save Result"** to export the enhanced image.
 
@@ -101,10 +102,13 @@ A standard `CMakeLists.txt` is recommended for linking OpenCV on Windows.
 
 ---
 
-## 📂 Project Structure 
+## 📂 Project Structure
 
 ```text
 Underwater-Image-Enhancement/
+├── figs/                    # Result images for README
+│   ├── 8_img_.png
+│   └── enhanced_result.jpg
 ├── underwater_enhance.py    # Python source code with PyQt5 GUI
 ├── underwater_enhance.cpp   # C++ source code with OpenCV HighGUI
 ├── README.md                # Project documentation
@@ -112,7 +116,7 @@ Underwater-Image-Enhancement/
 
 ```
 
-## 📊 Pipeline Comparison 
+## 📊 Pipeline Comparison
 
 | Stage | Visual Effect | Description |
 | --- | --- | --- |
@@ -120,7 +124,6 @@ Underwater-Image-Enhancement/
 | **WB + Red** | Color Corrected | Red component restored, color cast removed. |
 | **Dehaze** | Clearer | Haze/Fog removed, transmission map applied. |
 | **Final** | Sharp & Natural | Local contrast enhanced and edges sharpened. |
-
 
 ## 📄 License
 
