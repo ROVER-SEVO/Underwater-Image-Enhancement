@@ -125,6 +125,20 @@ Underwater-Image-Enhancement/
 | **Dehaze** | Clearer | Haze/Fog removed, transmission map applied. |
 | **Final** | Sharp & Natural | Local contrast enhanced and edges sharpened. |
 
+## 📚 Citation
+
+If you use this code or the original method, please acknowledge the source:
+
+```bibtex
+@misc{opencv_underwater_2025,
+  title = {Guide to Underwater Image Enhancement Using OpenCV},
+  author = {Samruddhi},
+  year = {2025},
+  howpublished = {\url{[https://opencv.org/blog/underwater-image-enhancement-using-opencv/](https://opencv.org/blog/underwater-image-enhancement-using-opencv/)}},
+  note = {Accessed: 2025-12-17},
+  organization = {OpenCV.org}
+}
+
 ## 📄 License
 
 This project is open source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
