@@ -137,7 +137,7 @@ If you use this code or the original method, please acknowledge the source:
   howpublished = {\url{[https://opencv.org/blog/underwater-image-enhancement-using-opencv/](https://opencv.org/blog/underwater-image-enhancement-using-opencv/)}},
   note = {Accessed: 2025-12-17},
   organization = {OpenCV.org}
-}
+}'''
 
 ## 📄 License
 
