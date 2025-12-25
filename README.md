@@ -1,4 +1,3 @@
-```markdown
 # Underwater Image Enhancement Tool
 
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.x-blue.svg)](https://opencv.org/)
