@@ -125,6 +125,7 @@ Underwater-Image-Enhancement/
 | **Dehaze** | Clearer | Haze/Fog removed, transmission map applied. |
 | **Final** | Sharp & Natural | Local contrast enhanced and edges sharpened. |
 
+
 ## 📄 License
 
 This project is open source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
